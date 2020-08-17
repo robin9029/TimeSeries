@@ -30,3 +30,18 @@ AR: forcast next timestamp by regressing over previous value
 MA: Forcast the next timestamp value by averaging over the previous value 
 
 ARIMA: AutoRegressive Integrated Moving average (AR-I-MA): -for non stationary data -allows to difference the data -Also includes a seasonal differencing parameter for seasonal non-stationary data diff1 & diff2 are to reduce diffreence make data stationary
+
+Cross Validation on Time series:
+https://towardsdatascience.com/time-series-nested-cross-validation-76adba623eb9
+ k-fold cross-validation and hold-out cross-validation.
+ 
+ Arbitrary Choice of Test Set: randomly devide test & train 30:70 ratio, will may not perform good on unseen data 
+
+Nested CV Methods for a Time Series
+1. Predict Second Half
+2. Day Forward-Chaining
+
+1. Predict Second Half: train, test split  can be set can produce biased
+2. a common approach is to create many train/test splits and average the errors over all the splits
+
+ 
